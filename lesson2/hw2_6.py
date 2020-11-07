@@ -47,7 +47,7 @@ while True:
     else:
         print("Неверный ввод. Повторите да или нет:")
 
-print("Итого товаров: ", stock)
+print("Итого товаров: ", *stock, sep="\n")
 
 analytics = {}
 for item in stock:
@@ -56,4 +56,4 @@ for item in stock:
             analytics[key].append(value)
         else:
             analytics[key] = [value]
-print("Аналитика о товарах", analytics)
+print("Аналитика о товарах", *analytics.items(), sep="\n")
