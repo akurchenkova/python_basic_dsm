@@ -40,8 +40,5 @@ def my_function(**kwargs):
 
 print(my_func(name="Семен", surname="Соколов", year="1989", city="Москва", email="mail@mail.ru", phone="79097090077"))
 user_info(name="Иван", surname="Петров", year=1988, city="Москва", email="mail@gmail.ru", phone=79007007770)
-print(my_function(name="Павел", surname="Воробьев", year="1997", city="Москва", email="mail3@mail.ru", phone="79097098898"))
-
-
-
-
+print(my_function(name="Павел", surname="Воробьев", year="1997", city="Москва", email="mail3@mail.ru",
+                  phone="79097098898"))
