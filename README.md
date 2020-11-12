@@ -1,6 +1,5 @@
 # python_basic_dsm
-Курс **Основы языка Python** на портале ![*GeekBrains.ru*][logo]  в рамках обучения по программе Data Science in Medicine.
-[logo]: img src="https://assets.website-files.com/5f75b134a1a14b83f4e06dfc/5f75b134a1a14bae6de06e24_GeekBrains%20icon.svg "Логотип GB"
+Курс **Основы языка Python** на портале ![*GeekBrains.ru*](img src="https://assets.website-files.com/5f75b134a1a14b83f4e06dfc/5f75b134a1a14bae6de06e24_GeekBrains%20icon.svg "Логотип GB") в рамках обучения по программе Data Science in Medicine.
 
 Период прохождения: 31.10.2020 - 30.11.2020 
 
