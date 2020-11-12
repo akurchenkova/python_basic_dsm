@@ -1,2 +1,2 @@
 # python_basic_dsm
-Курс базовый python на GeekBrains в рамках обучения на программе Data Science in Med
+Курс "Базовый python" на портале GeekBrains в рамках обучения по программе Data Science in Medicine.
