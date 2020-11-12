@@ -13,7 +13,7 @@ def my_range(start, stop, inc=1):
     Мой аналог range() - отличается от оригинала включением обеих границ
 
     """
-    while (inc > 0 and start <= stop) or (inc < 0 and start > stop):
+    while (inc > 0 and start <= stop) or (inc < 0 and start >= stop):
         yield start
         start += inc
 
@@ -35,7 +35,7 @@ def fact(n):
         yield 'Факториал - это функция, определённая на множестве НЕОТРИЦАТЕЛЬНЫХ целых чисел'
 
 
-# print(list(my_range(1, 5)))
+# print(list(my_range(1, -5, -1)))
 
 while True:
     try:
