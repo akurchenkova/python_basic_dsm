@@ -25,6 +25,6 @@ try:
                 continue
 
         mid_average = data_summa / idx
-        print(f'Средний доход сотрудников: {mid_average}')
+        print(f'Средний доход сотрудников всего предприятия: {mid_average}')
 except FileNotFoundError:
     print('Файл text_3.txt в рабочей директории отсутсвует')
