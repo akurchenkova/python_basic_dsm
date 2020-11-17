@@ -23,21 +23,25 @@ try:
         firms = {}
         for line in db:
             itm = line.split()
-            firms[itm[0]] = itm[2:]
-            # проверить что все айтамы издигит! и тогда ниже поправить
+            proceeds, costs = itm[2], itm[3]
+            if proceeds.isdigit() and costs.isdigit():
+                firms[itm[0]] = itm[2:]
+            else:
+                print('Не все данные распознаны, ошибка в числовой инфрмации')
         try:
             for key, value in firms.items():
                 firms[key] = int(value[0]) - int(value[1])
         except ValueError:
             print('Данные в исходном файле повреждены')
-
         try:
-            mid_av = sum(val for val in firms.values() if val > 0) / sum(1 for val in firms.values() if val > 0)
+            mid_av = round(sum(val for val in firms.values() if val > 0) / sum(1 for val in firms.values() if val > 0),
+                           2)
         except ZeroDivisionError:
             mid_av = 0
         finance = {'average_profit': mid_av}
         data_list = [firms, finance]
+        print(data_list)
         with open(j_data, "w", encoding='UTF-8') as write_jf:
             json.dump(data_list, write_jf, ensure_ascii=False, indent=4)
 except FileNotFoundError:
-    print('Файл text_7.txt в рабочей директории отсутсвует')
+    print('Файл text_7.txt в рабочей директории отсутствует')
