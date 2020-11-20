@@ -9,7 +9,6 @@
 
 
 class Road:
-
     constant_weight = 25
     constant_thick = 5
 
