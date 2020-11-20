@@ -13,11 +13,11 @@ class Road:
     constant_thick = 5
 
     def __init__(self, length, width):
-        self.__length = length
-        self.__width = width
+        self._length = length
+        self._width = width
 
     def mass_finder(self):
-        return int(self.__length * self.__width * self.constant_weight * self.constant_thick / 1000)
+        return int(self._length * self._width * self.constant_weight * self.constant_thick / 1000)
 
 
 r = Road(5000, 20)
