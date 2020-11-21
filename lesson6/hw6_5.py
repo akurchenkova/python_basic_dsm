@@ -20,37 +20,22 @@ class Stationery:
 
 
 class Pen(Stationery):
-
-    def __init__(self):
-        super(Pen, self).__init__()
-
     def draw(self):
-        super(Pen, self).draw()
+        print(f'Запуск отрисовки ручкой. Фирмы {self.title}')
 
 
 class Pencil(Stationery):
 
-    def __init__(self):
-        super(Pencil, self).__init__()
-
     def draw(self):
-        super(Pencil, self).draw()
+        print(f'Запуск отрисовки карандашом. Фирмы {self.title}')
 
 
 class Handle(Stationery):
 
-    def __init__(self):
-        super().__init__('Handle')
-
     def draw(self):
-        super(Handle, self).draw()
+        print(f'Запуск отрисовки маркером. Фирмы {self.title}')
 
 
-stati = Stationery()
-stati.draw()
-hand = Handle()
-hand.draw()
-pen = Pen()
-pen.draw()
-pencil = Pencil()
-pencil.draw()
+stati, pen, pencil, handle = Stationery(), Pen('Erich Krause'), Pencil('Faber-Castell'), Handle('Copic')
+
+stati.draw(), handle.draw(), pen.draw(), pencil.draw()
