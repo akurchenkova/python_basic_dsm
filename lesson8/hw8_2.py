@@ -12,9 +12,6 @@ class MyOwnError(Exception):
 
 while True:
     print('\n Программа находит значение выражения x/y.')
-    # x = input('x = ')
-    # y = input('y = ')
-
     print('Введите делимое')
     while True:
         x = input('x = ')
